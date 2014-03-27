@@ -9,13 +9,9 @@ module Set1
         index = i
       end
     end
-    if array.length == 0
-      return array
-    else
     array[index] = array[0]
     array[0] = small_number
     return array
-  end
   end
 
   def self.find_sum_2(array, sum = 0)
@@ -23,8 +19,8 @@ module Set1
    return false if array.count == 0
     array.each do |a|
     array.each do |b|
-        return true if (a + b == sum)
-      end
+      return true if (a + b == sum)
+    end
     end
     return false
   end
